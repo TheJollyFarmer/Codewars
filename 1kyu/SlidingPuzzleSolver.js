@@ -176,8 +176,7 @@ class Board {
   }
 
   isValidLocation(y, x) {
-    if (this.lockedRows.includes(y) || this.lockedCols.includes(x))
-      return false;
+    if (this.lockedRows.includes(y) || this.lockedCols.includes(x)) return false;
     if (x > this.edgeSize - 1 || x < 0) return false;
     if (y > this.edgeSize - 1 || y < 0) return false;
 
